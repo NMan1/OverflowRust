@@ -1,6 +1,6 @@
 # Overflow Rust
 
-Bypass hooks an imported function inside dxgkrnl.sys. This function resides in watchdog.sys, and is called when NtDxgkCreateTrackedWorkload gets called from win32u.dll
+Bypass hooks an imported function inside dxgkrnl.sys. This imported function resides in watchdog.sys, and is called when NtDxgkCreateTrackedWorkload gets called from win32u.dll
 
 NtDxgkCreateTrackedWorkload win32u.dll -> NtDxgkCreateTrackedWorkload dxgkrnl.sys -> (half way through function) WdLogEvent5_WdError watchdog.sys
 
