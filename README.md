@@ -2,7 +2,7 @@
 
 Bypass hooks an imported function inside dxgkrnl.sys. This imported function resides in watchdog.sys, and is called when NtDxgkCreateTrackedWorkload gets called from win32u.dll
 
-NtDxgkCreateTrackedWorkload win32u.dll -> NtDxgkCreateTrackedWorkload dxgkrnl.sys -> (half way through function) WdLogEvent5_WdError watchdog.sys
+NtDxgkCreateTrackedWorkload syscall win32u.dll -> NtDxgkCreateTrackedWorkload dxgkrnl.sys -> (half way through function) WdLogEvent5_WdError watchdog.sys
 
 <img src="https://i.imgur.com/gpx81z5.png">/
 
