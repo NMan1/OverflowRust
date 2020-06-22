@@ -12,11 +12,11 @@ To pass the struct I used shared memory. I think the bypass is safe, although th
 Method I used to render: https://github.com/thesecretclub/window_hijack
 
 # Features:
-Recoil Control
-Auto Pistol
-Spiderman
-Admin flags
-ESP
+- Recoil Control
+- Auto Pistol
+- Spiderman
+- Admin flags
+- ESP
   - Player
   - Scientist
   - Stash
