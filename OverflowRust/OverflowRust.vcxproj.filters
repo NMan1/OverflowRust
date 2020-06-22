@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="core\driver\driver.h" />
+    <ClInclude Include="core\driver\imports.h" />
+    <ClInclude Include="core\helpers\settings.h" />
+    <ClInclude Include="core\helpers\vectors.h" />
+    <ClInclude Include="core\helpers\color.hpp" />
+    <ClInclude Include="core\game\offsets.h" />
+    <ClInclude Include="core\game\cheat.h" />
+    <ClInclude Include="core\game\game.h" />
+    <ClInclude Include="core\renderer\renderer.h" />
+    <ClInclude Include="core\menu\menu.h" />
+    <ClInclude Include="core\menu\imgui\imgui.h" />
+    <ClInclude Include="core\menu\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="core\menu\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="core\menu\imgui\imgui_internal.h" />
+    <ClInclude Include="core\menu\imgui\imstb_rectpack.h" />
+    <ClInclude Include="core\menu\imgui\imstb_textedit.h" />
+    <ClInclude Include="core\menu\imgui\imstb_truetype.h" />
+    <ClInclude Include="core\game\esp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="core\helpers\settings.cpp" />
+    <ClCompile Include="core\main.cpp" />
+    <ClCompile Include="core\game\cheat.cpp" />
+    <ClCompile Include="core\menu\gui.cpp" />
+    <ClCompile Include="core\menu\menu.cpp" />
+    <ClCompile Include="core\menu\imgui\imgui.cpp" />
+    <ClCompile Include="core\menu\imgui\imgui_draw.cpp" />
+    <ClCompile Include="core\menu\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="core\menu\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="core\menu\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="core\menu\tabs\legit_tab.cpp" />
+    <ClCompile Include="core\menu\tabs\misc_tab.cpp" />
+    <ClCompile Include="core\menu\tabs\rage_tab.cpp" />
+    <ClCompile Include="core\menu\tabs\settings_tab.cpp" />
+    <ClCompile Include="core\menu\tabs\skins_tab.cpp" />
+    <ClCompile Include="core\menu\tabs\visuals_tab.cpp" />
+    <ClCompile Include="core\game\game.cpp" />
+  </ItemGroup>
+</Project>
