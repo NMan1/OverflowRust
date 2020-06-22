@@ -4,6 +4,8 @@ Bypass hooks an imported function inside dxgkrnl.sys. This imported function res
 
 NtDxgkCreateTrackedWorkload win32u.dll -> NtDxgkCreateTrackedWorkload dxgkrnl.sys -> (half way through function) WdLogEvent5_WdError watchdog.sys
 
+<img src="https://i.imgur.com/gpx81z5.png">/
+
 This hook could be detcted if two things occur
 1. If EAC scans watchdog.sys for hooks (%99 doubt they do)
 2. If EAC scans and compares all loaded drivers (doubt too would cause to many false positives probaly?)
@@ -29,6 +31,6 @@ Method I used to render: https://github.com/thesecretclub/window_hijack
 
 
 # Credits:
-Me
-Window Hijacking https://github.com/thesecretclub/window_hijack
-Hooking class/library: https://github.com/adrianyy/kernelhook
+- Me
+- Window Hijacking https://github.com/thesecretclub/window_hijack
+ - Hooking class/library: https://github.com/adrianyy/kernelhook
