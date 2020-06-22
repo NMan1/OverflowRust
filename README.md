@@ -7,7 +7,7 @@ NtDxgkCreateTrackedWorkload win32u.dll -> NtDxgkCreateTrackedWorkload dxgkrnl.sy
 <img src="https://i.imgur.com/gpx81z5.png">/
 
 This hook could be detcted if two things occur
-1. If EAC scans watchdog.sys for hooks (%99 doubt they do)
+1. If EAC scans watchdog.sys for hooks (%99 doubt they do, its just some random windows non-pg protcted module why would they)
 2. If EAC scans and compares all loaded drivers (doubt too would cause to many false positives probaly?)
 
 To pass the struct I used shared memory. I think the bypass is safe, although the renderering method is probaly not. 
