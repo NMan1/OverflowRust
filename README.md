@@ -1,22 +1,31 @@
-# OverflowR6V2
-## V2 Edition 
+# Overflow Rust
 
-A modified version of my old cheat https://github.com/NMan1/Rainbow-Six-Cheat.
-I changed the bypass to a kernel function hook, its a inline hook a little bit modified nothing crazy though.
+Bypass hooks an imported function inside dxgkrnl.sys. This function resides in watchdog.sys, and is called when NtDxgkCreateTrackedWorkload gets called from win32u.dll
 
-The cheat itself is cleaned up and reducded down to just the cheat menu no loader.
+NtDxgkCreateTrackedWorkload win32u.dll -> NtDxgkCreateTrackedWorkload dxgkrnl.sys -> (half way through function) WdLogEvent5_WdError watchdog.sys
 
-Features: 
-  - Rapid fire
-  - Chams
-  - No recoil
-  - No spread
-  - Instant animations
-  - Speed changer
-  - Weapon fov changer
-  - Player fov changer
+To pass our struct I used shared memory. I think the bypass is safe, although the renderering method is probaly not. 
+Method I used to render: https://github.com/thesecretclub/window_hijack
+
+
+# Features:
+Recoil Control
+Auto Pistol
+Spiderman
+Admin flags
+ESP
+  - Player
+  - Scientist
+  - Stash
   
-The aimbot isnt implemented yet (or maybe ever).
-May or may not be safe, depends on if shiteye has sigged nops beteewn the inline mov jmp rax hook.
+  
+# Pictures:
+<img src="https://i.gyazo.com/25733304ff78fb87490a3412a4b75b84.png">/
+<img src="https://i.gyazo.com/f5108bd755460600c049bb06e79d4119.jpg"/>
+<img src="https://i.gyazo.com/053775f4c5ddf691203bdf6804fb77ea.jpg"/>
 
 
+# Credits:
+Me
+Window Hijacking https://github.com/thesecretclub/window_hijack
+Hooking class/library: https://github.com/adrianyy/kernelhook
