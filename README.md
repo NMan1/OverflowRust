@@ -4,9 +4,12 @@ Bypass hooks an imported function inside dxgkrnl.sys. This imported function res
 
 NtDxgkCreateTrackedWorkload win32u.dll -> NtDxgkCreateTrackedWorkload dxgkrnl.sys -> (half way through function) WdLogEvent5_WdError watchdog.sys
 
-To pass our struct I used shared memory. I think the bypass is safe, although the renderering method is probaly not. 
-Method I used to render: https://github.com/thesecretclub/window_hijack
+This hook could be detcted if two things occur
+1. If EAC scans watchdog.sys for hooks (%99 doubt they do)
+2. If EAC scans and compares all loaded drivers (doubt too would cause to many false positives probaly?)
 
+To pass the struct I used shared memory. I think the bypass is safe, although the renderering method is probaly not. 
+Method I used to render: https://github.com/thesecretclub/window_hijack
 
 # Features:
 Recoil Control
