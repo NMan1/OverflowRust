@@ -23,12 +23,16 @@ Method I used to render: https://github.com/thesecretclub/window_hijack
   - Scientist
   - Stash
   
-  
 # Pictures:
 <img src="https://i.gyazo.com/25733304ff78fb87490a3412a4b75b84.png">/
 <img src="https://i.gyazo.com/f5108bd755460600c049bb06e79d4119.jpg"/>
 <img src="https://i.gyazo.com/053775f4c5ddf691203bdf6804fb77ea.jpg"/>
 
+# Compiling
+
+1. Right click on "OverflowR6Rust.sln" in the first folder.
+2. Open it in a text editor such as notepad++
+3. Change the directories to where your files are located 
 
 # Credits:
 - Me
