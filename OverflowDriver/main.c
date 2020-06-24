@@ -259,7 +259,7 @@ void real_entry()
 	clean_piddbcachetalbe();
 
 	InitializeObjectAttributes(&obj_att, NULL, OBJ_KERNEL_HANDLE, NULL, NULL);
-	NTSTATUS status = PsCreateSystemThread(&thread, THREAD_ALL_ACCESS, &obj_att, NULL, NULL, create_memeory_thread, NULL);
+	// NTSTATUS status = PsCreateSystemThread(&thread, THREAD_ALL_ACCESS, &obj_att, NULL, NULL, create_memeory_thread, NULL);
 	if (!NT_SUCCESS(status))
 	{
 		DbgPrintEx(0, 0, "PsCreateSystemThread Failed:\n", status);
