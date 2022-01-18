@@ -2,13 +2,6 @@
 #include "imports.h"
 #include "helpers.h"
 
-/*
-
-	FUCKING GAY !
-	FUCK YOU C
-
-*/
-
 BOOLEAN gay(copy_memory* m)
 {
 	tag_wnd*(*ValidateHwnd)(UINT_PTR) = (tag_wnd * (*)(UINT_PTR))(get_system_module_export("\\SystemRoot\\System32\\win32kbase.sys", "ValidateHwnd"));
